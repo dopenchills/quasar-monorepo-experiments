@@ -4,19 +4,19 @@
 
 ### pnpm
 
-This project uses pnpm workspaces for monorepo.
+This project uses `pnpm` workspaces to manage a monorepo structure.
 
-The main project uses Quasar Framework to develop and build the whole package.
+The parent project is built with the Quasar Framework.
 
-The subpackage also depends on Quasar, but they just provides custom components on top of Quasar components. They cannot be built by themselves as of now.
+The subpackages also rely on Quasar but just provide custom components built on top of Quasar. These subpackages cannot yet be built independently.
 
-### `counter` subpackage
+### `counter` Subpackage
 
-This package demonstrates below:
+This subpackage demonstrates the following:
 
-- npm package can be exported as source code, without being packed for publishing
-- Only components that are exported with `exports` field are visible from parent project
+- An npm package can be exported as source code without requiring packaging for publication.
+- Only components explicitly defined in the `exports` field are accessible to the parent project.
 
-### `random-values` subpackage
+### `random-values` Subpackage
 
-This package is just here to demonstrate multiple package can be added to parent project
+This subpackage is here only to show multiple packages can be added to workspaces
