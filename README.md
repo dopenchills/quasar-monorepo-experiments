@@ -1,41 +1,22 @@
-# Quasar Monorepo (quasar-monorepo)
+# Quasar Monorepo Experiments
 
-Monorepo experiment with Quasar
+## Monorepo
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
+### pnpm
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+This project uses pnpm workspaces for monorepo.
 
+The main project uses Quasar Framework to develop and build the whole package.
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
+The subpackage also depends on Quasar, but they just provides custom components on top of Quasar components. They cannot be built by themselves as of now.
 
+### `counter` subpackage
 
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
+This package demonstrates below:
 
+- npm package can be exported as source code, without being packed for publishing
+- Only components that are exported with `exports` field are visible from parent project
 
+### `random-values` subpackage
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+This package is just here to demonstrate multiple package can be added to parent project
