@@ -1,0 +1,28 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  quasar:
+    specifier: ^2.17.4
+    version: 2.17.4
+
+devDependencies:
+  typescript:
+    specifier: ^5.7.2
+    version: 5.7.2
+
+packages:
+
+  /quasar@2.17.4:
+    resolution: {integrity: sha512-EqfV7taxfHIGN9gTwpwRayF6VMxk2I7ztapTwr+A1h22Jop4gNpl40HDuNtjpKbXaw/ZsIBK9cbch0aXDCGhNg==}
+    engines: {node: '>= 10.18.1', npm: '>= 6.13.4', yarn: '>= 1.21.1'}
+    dev: false
+
+  /typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
