@@ -5,7 +5,7 @@
     <q-btn
       @click="
         () => {
-          randomInteger = generate();
+          randomInteger = generateRandomInteger(1, 100);
         }
       "
     >
@@ -18,10 +18,7 @@
 <script setup lang="ts">
 import { QBtn, QIcon } from 'quasar';
 import { ref } from 'vue';
+import { generateRandomInteger } from 'random-value-generator';
 
-const generate = (): number => {
-  return Math.floor(Math.random() * 100);
-};
-
-const randomInteger = ref(generate());
+const randomInteger = ref(generateRandomInteger(1, 100));
 </script>

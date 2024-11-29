@@ -1,10 +1,10 @@
 {
-  "name": "random-values",
+  "name": "random-value-generator",
   "version": "1.0.0",
   "description": "",
   "exports": {
     ".": {
-      "import": "./main.ts"
+      "import": "./random-value-generator.ts"
     }
   },
   "scripts": {
@@ -12,8 +12,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "random-value-generator": "workspace:../random-value-generator"
-  }
+  "license": "ISC"
 }

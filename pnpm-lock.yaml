@@ -83,7 +83,13 @@ importers:
         specifier: ^5.7.2
         version: 5.7.2
 
-  packages/random-values: {}
+  packages/random-value-generator: {}
+
+  packages/random-values:
+    dependencies:
+      random-value-generator:
+        specifier: workspace:../random-value-generator
+        version: link:../random-value-generator
 
 packages:
 
