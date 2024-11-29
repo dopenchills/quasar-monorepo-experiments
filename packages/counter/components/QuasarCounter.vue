@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>QuasarCounter</h1>
-    <h2>
+    <h2>QuasarCounter</h2>
+    <h3>
       <b>{{ count }}</b>
-    </h2>
+    </h3>
     <q-btn @click="increment">Increment</q-btn>
   </div>
 </template>

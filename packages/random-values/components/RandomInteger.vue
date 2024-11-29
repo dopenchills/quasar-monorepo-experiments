@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Random Integer</h1>
-    <p>{{ randomInteger }}</p>
+    <h2>Random Integer</h2>
+    <h3>{{ randomInteger }}</h3>
     <q-btn
       @click="
         () => {

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>SimpleCounter</h1>
-    <h2>
+    <h2>SimpleCounter</h2>
+    <h3>
       <b>{{ count }}</b>
-    </h2>
+    </h3>
     <button @click="increment">Increment</button>
   </div>
 </template>
