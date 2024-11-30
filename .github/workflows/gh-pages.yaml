@@ -29,7 +29,7 @@ jobs:
         run: pnpm install
 
       - name: Build the project
-        run: pnpm build
+        run: PUBLIC_PATH='quasar-monorepo-experiments/' pnpm build
         working-directory: ./packages/frontend
 
       - name: Upload static files
