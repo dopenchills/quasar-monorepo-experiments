@@ -15,8 +15,8 @@
     "postinstall": "quasar prepare"
   },
   "dependencies": {
-    "counter": "workspace:./packages/counter",
-    "random-values": "workspace:./packages/random-values",
+    "counter": "workspace:../counter",
+    "random-values": "workspace:../random-values",
     "vue-i18n": "^9.2.2",
     "pinia": "^2.0.11",
     "@quasar/extras": "^1.16.4",

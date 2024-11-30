@@ -6,14 +6,24 @@ settings:
 
 importers:
 
-  .:
+  packages/counter:
+    dependencies:
+      quasar:
+        specifier: ^2.17.4
+        version: 2.17.4
+    devDependencies:
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+
+  packages/frontend:
     dependencies:
       '@quasar/extras':
         specifier: ^1.16.4
         version: 1.16.13
       counter:
-        specifier: workspace:./packages/counter
-        version: link:packages/counter
+        specifier: workspace:../counter
+        version: link:../counter
       pinia:
         specifier: ^2.0.11
         version: 2.2.8(typescript@5.5.4)(vue@3.5.13)
@@ -21,8 +31,8 @@ importers:
         specifier: ^2.16.0
         version: 2.17.4
       random-values:
-        specifier: workspace:./packages/random-values
-        version: link:packages/random-values
+        specifier: workspace:../random-values
+        version: link:../random-values
       vue:
         specifier: ^3.4.18
         version: 3.5.13(typescript@5.5.4)
@@ -72,16 +82,6 @@ importers:
       vue-tsc:
         specifier: ^2.0.29
         version: 2.1.10(typescript@5.5.4)
-
-  packages/counter:
-    dependencies:
-      quasar:
-        specifier: ^2.17.4
-        version: 2.17.4
-    devDependencies:
-      typescript:
-        specifier: ^5.7.2
-        version: 5.7.2
 
   packages/random-value-generator: {}
 
