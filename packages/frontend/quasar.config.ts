@@ -53,6 +53,7 @@ export default defineConfig((ctx) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
+      // PUBLIC_PATH is introduced for GitHub Pages deployment.
       publicPath: process.env.PUBLIC_PATH ?? '/',
       // analyze: true,
       // env: {},
