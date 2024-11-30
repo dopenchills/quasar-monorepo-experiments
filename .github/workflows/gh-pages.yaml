@@ -35,5 +35,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          publish_dir: ./build # Adjust to your build output directory (e.g., 'dist' for Vue)
