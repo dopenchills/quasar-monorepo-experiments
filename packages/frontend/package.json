@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Monorepo experiment with Quasar",
   "productName": "Quasar Monorepo",
-  "author": "besaklish <besaklish@gmail.com>",
   "type": "module",
   "private": true,
   "scripts": {
